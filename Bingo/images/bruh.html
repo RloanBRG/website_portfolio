@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            cursor: pointer; /* Cursor de mão ao passar o mouse */
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .clicked {
+            background-color: darkgreen; /* Cor quando clicado */
+        }
+    </style>
+</head>
+<body>
+    <table id="bingo">
+        <!-- Cabeçalho -->
+        <tr>
+            <th>B</th>
+            <th>I</th>
+            <th>N</th>
+            <th>G</th>
+            <th>O</th>
+        </tr>
+        <!-- Linhas de dados -->
+        <!-- Repita o seguinte bloco 5 vezes -->
+        <tr>
+            <td>1-15</td>
+            <td>16-30</td>
+            <td>31-45</td>
+            <td>46-60</td>
+            <td>61-75</td>
+        </tr>
+        <!-- Fim do bloco repetido -->
+    </table>
+
+    <script>
+        const bingoTable = document.getElementById("bingo");
+        bingoTable.addEventListener("click", (event) => {
+            if (event.target.tagName === "TD") {
+                event.target.classList.toggle("clicked");
+            }
+        });
+    </script>
+</body>
+</html>

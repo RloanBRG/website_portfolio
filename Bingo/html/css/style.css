@@ -1,0 +1,161 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8px;
+    height: 50em;
+    width: auto;
+
+}
+
+body {
+     transition: background-color 0.5s, color 0.5s;
+    }
+body.escuro{
+    background-color: #222;
+    color:white;
+}
+body.claro{
+    background-color: white;
+    color: black;
+}
+
+header{
+    padding-top: 6em;
+}
+
+h1{
+    font-size: 30px;
+    justify-content: center;
+    display: flex;
+}
+
+.pai{
+    height: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#div_table.escuro{
+    display:table;
+    background-color: #313131;
+    height: 100%;
+    width: 95%;
+    padding: 2.5em;
+    padding-top: 4.5em;
+    margin: 1em .5em;
+    border-radius: 10px;
+}
+
+#div_table.claro{
+    display:table;
+    background-color: #e7e7e7;
+    height: 100%;
+    width: 95%;
+    padding: 2.5em;
+    padding-top: 4.5em;
+    margin: 1em .5em;
+    border-radius: 10px;
+}
+
+
+#bingo{
+    
+    justify-content: space-evenly;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 17px;
+
+    
+}
+
+th{
+    font-size: 24px;
+    cursor:default;
+    background-color:#778eda;
+}
+
+.letra{
+    background-color: #917dc7 ;
+}
+
+th,td{
+    border: 2px solid #ddd; 
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #8a8a8a;
+}
+
+.clicked{
+    background-color: rgb(1, 109, 1);
+}
+
+
+.Numbers:hover{
+    cursor: pointer;
+    font-size: 16px;
+    background-color: rgb(65, 65, 115);
+    
+}
+
+.divButton{
+    display: flex;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+
+#reset{
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: .3em;
+    margin-left: 1.2em;
+    border:solid 2px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#reset:hover{
+    background-color: #4c4c4c;
+    color: #fcfcfc;
+    border: #ccc solid 2px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 7em;
+}
+
+span{
+    font-size: 11px;
+}
+
+#tema{
+    margin-left: 50px;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    padding: .3em;
+    margin-left: 1.2em;
+    border:solid 2px gray;
+    background-color: #acacac;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    transition: .5s;
+}
+
+#tema:hover{
+    background-color: #4c4c4c;
+    color: #fcfcfc;
+    border: solid 2px gray;
+}
